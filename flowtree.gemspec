@@ -1,5 +1,3 @@
-$LOAD_PATH << File.expand_path("../lib", __FILE__)
-
 Gem::Specification.new do |s|
   s.name        = 'flowtree'
   s.summary     = "Maps Orbeon’s page flow controller"
@@ -14,4 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/blackcoat/flowtree'
   
   s.files       = ["lib/flowtree.rb"]
+  
+  s.add_runtime_dependency 'nokogiri',
+    '~> 2.2'
 end
